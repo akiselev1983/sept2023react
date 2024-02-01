@@ -37,7 +37,9 @@ const Simpsons = () => {
 
     return (
         <div>
+
             {simpsons.map(value => (<Simpson value={value} key={value.id}/>))}
+
         </div>
     );
 };

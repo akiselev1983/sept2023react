@@ -5,12 +5,12 @@ const Character = ({value}) => {
 
     return (
         <div>
-            <div>id {id}</div>
-            <div>{name}</div>
-            <div>{status}</div>
-            <div>{species}</div>
-            <div>{gender}</div>
-            <div>{created}</div>
+            <h3>id: {id}</h3>
+            <h2>Name: {name}</h2>
+            <div>Status: {status}</div>
+            <div>Species: {species}</div>
+            <div>Gender: {gender}</div>
+            <div>Created: {created}</div>
             <img src={image} alt={name}/>
             <hr/>
 

@@ -5,7 +5,10 @@ import Characters from "./components/Characters/Characters";
 const App = () => {
     return (
         <div>
-            {/*<Simpsons/>*/}
+            <Simpsons/>
+            <hr/>
+            <hr/>
+            <hr/>
             <Characters/>
         </div>
     );

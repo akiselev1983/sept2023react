@@ -62,6 +62,7 @@ const Characters = () => {
     return (
         <div>
             {characters.map(value => (<Character value={value} key={value.id}/>))}
+
         </div>
     );
 };
