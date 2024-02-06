@@ -1,9 +1,12 @@
 import React from 'react';
+import Posts from "./components/PostContainer/Posts/Posts";
+import Flights from "./components/FlightsContainer/Flights/Flights";
 
 const App = () => {
     return (
         <div>
-            App
+            {/*<Posts/>*/}
+            <Flights/>
         </div>
     );
 };
