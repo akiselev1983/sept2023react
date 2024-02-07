@@ -1,9 +1,10 @@
-import {axiosService} from "./axiosService";
+
 import {urls} from "../constants/urls";
+import {jsonAPIService} from "./jsonAPIService";
 
 const postService = {
-    getAll: () => axiosService(urls.posts.base),
-    getById: (id) => axiosService(urls.posts.byId(id))
+    getAll: () => jsonAPIService(urls.posts.base),
+    getById: (id) => jsonAPIService(urls.posts.byId(id))
 }
 
 export {postService}

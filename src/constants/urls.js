@@ -1,8 +1,12 @@
 
-const baseURL = 'https://jsonplaceholder.typicode.com'
+const jsonBaseURL = 'https://jsonplaceholder.typicode.com'
+const spaceXBaseURL = 'https://api.spacexdata.com/v3'
+
+
 
 const users = '/users'
 const posts = '/posts'
+const launches = '/launches'
 
 const urls = {
     users: {
@@ -12,7 +16,8 @@ const urls = {
     posts: {
         base: posts,
         byId: (id) => `${posts}/${id}`
-    }
+    },
+    launches
 }
 
-export {baseURL, urls}
+export {jsonBaseURL, spaceXBaseURL, urls}
