@@ -5,8 +5,8 @@ import CommentsContainer from "./components/CommentsContainer/CommentsContainer"
 const App = () => {
     return (
         <div>
-            {/*<UsersContainer/>*/}
-            <CommentsContainer/>
+            <UsersContainer/>
+            {/*<CommentsContainer/>*/}
         </div>
     );
 };
