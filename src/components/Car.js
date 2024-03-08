@@ -8,10 +8,7 @@ const Car = ({car}) => {
 
     const dispatch = useDispatch()
 
-    const deleteById = async () => {
-        await carService.deleteById(id)
-        dispatch(carActions.setTrigger())
-    }
+
 
 
     return (
@@ -21,7 +18,7 @@ const Car = ({car}) => {
             <div>price: {price}</div>
             <div>year: {year}</div>
             <button onClick={()=>dispatch(carActions.setCarForUpdate(car))}>UpDate</button>
-            <button onClick={deleteById}>Delete</button>
+            <button onClick={()=>dispatch(carActions.deleteById({id}))}>Delete</button>
         </div>
     );
 };

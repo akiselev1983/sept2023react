@@ -9,7 +9,8 @@ const Cars = () => {
     const {cars, trigger}  = useSelector(state => state.cars)
     console.log(cars);
     useEffect(() => {
-        carService.getAll().then(({data})=>dispatch(carActions.setResponse(data)))
+        // carService.getAll().then(({data})=>dispatch(carActions.setResponse(data)))
+        dispatch(carActions.getAll())
     }, [trigger]);
 
     return (
