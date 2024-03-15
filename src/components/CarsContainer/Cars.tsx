@@ -8,6 +8,7 @@ const Cars = () => {
 
     const dispatch = useAppDispatch()
     const {cars} = useAppSelector(state => state.cars)
+    const [expanded, setExpanded] = React.useState<string>(null);
 
     useEffect(() => {
         dispatch(carActions.getAll())
@@ -15,7 +16,7 @@ const Cars = () => {
 
     return (
         <div>
-            {cars.map(car=><Car key={car.id} car={car}/>)}
+            {cars.map(car=><Car key={car.id} car={car} setExpanded={setExpanded} expanded={expanded}/>)}
         </div>
     );
 };
